@@ -1,4 +1,6 @@
 # BlitzitOnLinux
+<img src="https://github.com/krickettou/BlitzitOnLinux/blob/main/Assets/ico/BlitzitLinux_512x512.png" width="200" height="200" alt="Blitzit-on-Linux" />   
+
 A guide with information of how to run [Blitzit](https://www.blitzit.app/) app on GNU/Linux 🐧.
 
 ## Before start
@@ -32,14 +34,16 @@ The best and recommended option is the [Flatpack Lutris](https://flathub.org/en/
 
 Once installed Lutris, at first-time open you'll see something like this. Don't worry, that are some auto-managed dependencies just installing.
 
+![Lutris-first-open](Assets/img/BoL_Lutris01.png)
 
 ## 3. Installing Blitzit with Lutris   
-1. Clic on the plus ``+`` icon on the top left corner of the window, then press ``Install a Windows game from an executable``
+1. Click on the plus ``+`` icon on the top left corner of the window, then press ``Install a Windows game from an executable``.
 2. Give a name to the app, leave the *Installer preset* field as ``Windows 10 64-bit (Default)``, and if you want to, change the *Locale* field with your preference language. Then press the ``Install`` button.
 3. Press ``Install`` again on *wine Setup File* button.
 4. Select or create a file path where the app will be installed, for example: ``/home/$USER/Blitzit``. Uncheck ``Create a desktop shortcut``, this won't be useful.
-5. Press the ``⋮`` three dots button and select the ``.exe`` Blitzit setup file you have downloaded. Then press ``Install``
+5. Press the ``⋮`` three dots button and select the ``.exe`` Blitzit setup file you have downloaded. Then press ``Install``.
 6. At this point, a Blitzit window will be appearing on your screen, go on and complete the login process. This will finalize the installation of the necessary files.
+  ![Lutris-blitzit-window](Assets/img/BoL_Lutris02.png)
   > [!IMPORTANT]
   > The files are ready but Blitzit is not executable yet. Don't worry, just a few steps remaining.
 7. Close the Blitzit app, back in the terminal press the ``Abort`` button, then uncheck ``Remove game files`` and press ``Yes`` button.
@@ -50,8 +54,8 @@ Once installed Lutris, at first-time open you'll see something like this. Don't 
    * Set the name of the app.
    * Set ``Wine (Runs Windows games)`` in the *Runner* field.
 3. In ``Game options`` tab:
-   * In the *Executable* field press the ``⋮`` three dots button and select the file in the path ``/home/$USER/Blitzit/drive_c/users/$USER/AppData/Local/Programs/blitzit/Blitzit.exe``
-   * In the *Working Directory* field press the ``⋮`` three dots button and select the installation directory  ``/home/$USER/Blitzit``
+   * In the *Executable* field press the ``⋮`` three dots button and select the file in the path ``/home/$USER/Blitzit/drive_c/users/$USER/AppData/Local/Programs/blitzit/Blitzit.exe``.
+   * In the *Working Directory* field press the ``⋮`` three dots button and select the installation directory  ``/home/$USER/Blitzit``.
   > [!NOTE]
   > The ``/home/$USER/Blitzit`` directory is the example used in this guide, if your directory is different use it.
 4. In ``Runner options`` tab make sure the ``Enable DXVK`` and ``Enable VKD3D`` are enabled (to be redundant).
@@ -73,12 +77,14 @@ As you noticed, there is no icon in the Blitzit shortcuts, so follow this steps:
 
 Finally, you have created the shortcuts and set correctly the icon on it.
 
-Note: The ``Blitzit.lnk`` file in desktop is unneecssary, just delete it.
+Note: The ``Blitzit.lnk`` file in desktop is unnecessary, just delete it.
 
 # Extra info, tips and troubleshooting.
 * If you are having glitching problems, consider changing *Wayland* to *X11* graphic interface.
 * Surprisingly, all features are functional at the time of writing this guide.
 * I have not been able to update the app since the opportunity has not yet been given. However, I am very sure that if a new update is released, it will be done automatically considering how the app works on Windows. When this happens, this guide will be updated with that information.
+
+- Any comments, suggestions, or additional information would be greatly appreciated.
 
 # Links of interest
 * [Blitzit App](https://www.blitzit.app/) official page
